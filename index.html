@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pagina Quiz</title>
+
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="/image/logos.png">
+
+</head>
+<body>
+    <div class="borda">
+        <div class="all">
+            <main>
+                <img src="/image/fotoperfisl.png" alt="foto" class="foto" data-anime="top1">
+                
+                <div class="apresentacao">
+                    <h1 class="text-titulo" data-anime="top2">Você quer aprender a ganhar $ pela internet?</h1>
+                    
+                    <p class="text-descricao main" data-anime="top3">
+                        O jovem, Henry Mietzsch que aos 16 anos faturou <strong>MEIO MILHÃO DE REAIS</strong>, criou um método simples e prático, capaz de transformar seu celular em uma máquina de imprimir dinheiro, e vai te mostrar como fazer o mesmo.
+                    </p>
+                    
+                    <p class="text-pedido main" data-anime="top4">A apresentação a seguir é restrita e só pode ser vista após você responder as perguntas da forma mais honesta possível.</p>
+                    
+                </div>
+            </main>
+                <div class="conteiner" data-anime="top5">
+                    <div class="loading">
+                        <div class="textchange">
+                            <p class="change selected">Validando respostas...</p>
+                            <p class="change">Checando disponibilidade no servidor...</p>
+                            <p class="change">Reservando vaga no servidor...</p>
+                            <p class="change">Processo concluído!</p>
+                        </div>
+
+                        <div class="contentprogress">
+                            <div class="progress-bar" data-label="Carregando..."></div>
+                        </div>
+                    </div>
+
+                    <div id="game" class="justify-center flex-column">
+                        <p id="progressText">
+                            Questão
+                        </p>
+            
+                        <h1 id="question">Qual é a resposta para esta questão</h1>
+                        
+                        <div id="hud">
+                            <div class="hud-item">
+                                <p class="text">Carregando...</p> <!--Deixar menor-->
+                                <div id="progressBar">
+                                    <div id="progressBarFull"><p id="score">0%</p></div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="btns">
+                            <div class="choice-conteiner btnone">
+                                <p class="choice-text" data-number="1">Escolha</p>
+                            </div>
+    
+                            <div class="choice-conteiner btntwo">
+                                <p class="choice-text" data-number="2">Escolha 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <footer>
+            <div class="rodape" data-anime="top7">
+                <img class="logo" src="/image/logohd.png" alt="logo" data-anime="top6">
+                <p class="copyright">Copyright 2021 - Kreator LTDA ®</br>Todos os direitos reservados.</p>
+            </div>
+        
+            <script src="./game.js"></script>
+        </footer>
+    </div> 
+    
+</body>
+</html>
